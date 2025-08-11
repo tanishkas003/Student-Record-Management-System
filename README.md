@@ -1,32 +1,25 @@
-# Student Record Management System
-A minimalist desktop app  to managae students record. **record are saved directly on an excel file to decrease data Entry labour cost**  and improves efficiency.
+# 🎓 Student Record Management System (C++)
 
->launch the srm.exe file directly to use the App.
+A console-based application to manage student records efficiently, built in **C++** with file handling, search features, and export functionality.  
 
->for testing purpose both passwords are set to "password".
+---
 
->Admin have full access to manipulate the data.
+## Features
 
->Student account can only view the data.
-## `Login`
-<img src="ScreenShot/Home.JPG">
+### **Core Functionality**
+- **Add Student** — Store student details like Roll No, Name, Email, and Phone.
+- **View Students** — Display all records in a tabular format.
+- **Search by Roll Number** — Quickly find any student.
+- **Export to CSV** — Save records to a `.csv` file for use in Excel.
+- **Login Authentication** — Only authorized users can access the system.
+- **Colored Console UI** — Improved readability and professional look.
 
-## `Logged in as Admin`
-<img src="ScreenShot/AdminFunction.JPG">
+---
 
-## `Viewing Students Records`
-<img src="ScreenShot/ViewData.JPG">
-
-## ``Records Saved in Excel File``
-<img src="ScreenShot/ViewExcel.JPG">
-
-### Running on Local machine
-
-- Install a C++ compiler (e.g., GCC).
-- Write your C++ code and save it with the .cpp extension.
-- Open the terminal (Linux/Mac) or Command Prompt (Windows).
-- Navigate to the directory containing your C++ source code.
-- Compile the code using the command: `g++ -o output_filename source_file.cpp`.
-- Run the executable using: `./output_filename` (Linux/Mac) or `output_filename.exe` (Windows).
-- Test and verify your program's functionality.
-
+## Customizations Added
+- **Login System** before accessing the main menu
+- **Search Feature** with Roll No filter
+- **CSV Export Function** for easy data sharing
+- **Email & Phone fields** added to student records
+- **Colored console output** for better user experience
+- **Clean and responsive menu design**
