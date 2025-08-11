@@ -7,10 +7,8 @@
 using namespace std;
 
 void passwordVerification(void);
-void mainMenu(void);
 
-//Auth Before opening the main program
-
+// Auth Before opening the main program
 void passwordVerification()
 {
     system("cls");
@@ -39,7 +37,6 @@ void passwordVerification()
 
             for (int i = 0; i < 4; i++)
             {
-
                 Sleep(1000); // 1 second pause;
                 cout << ".";
             }
@@ -47,21 +44,18 @@ void passwordVerification()
             exit(0);
         }
 
-    }
+    } while (password != "password");
 
-    while (password != "password");
-    mainMenu(); // main menu function is in the Header File adminFunction.h
+    // after correct password is entered show main menu implemented in adminFunction.h
+    mainMenu();
 }
 
 int main()
 {
-
-    // fast io
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
 
-    //loadingBar(); // loadingBar() is in the loading.h header for loading animation.
     system("color 9F");
 
     passwordVerification();
